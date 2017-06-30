@@ -191,6 +191,7 @@
     src: "{{ fname }}"
     dest: "{{ fname }}"
     mode: push
+    use_ssh_args: yes
   delegate_to: localhost
   become: false
   register: get_task
